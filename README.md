@@ -1,6 +1,7 @@
 <html lang='ja'>
 	<head>
 		<title>script</title>
+		<link rel='stylesheet' href='vigenere.css' type='text/css'>
 		<meta charset="UTF-8">
 	</head>
 	<body>
