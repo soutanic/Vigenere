@@ -25,7 +25,6 @@ function composite(){
 	document.write('<br>');
 }
 function encryption_con(){
-	var alphabet = "abcdefghijklmnopqrstuvwxyz<>";
 	var user_input_encryption = document.getElementById('user_input_encryption').value;
 	var key_encryption = document.getElementById('key_encryption').value;
 	var result='';
@@ -51,7 +50,6 @@ function encryption_con(){
 	document.write(result)
 }
 function composite_con(){
-	var alphabet = "abcdefghijklmnopqrstuvwxyz<>";
 	var user_input_composite = document.getElementById('user_input_composite').value;
 	var key_composite = document.getElementById('key_composite').value;
 	var result = '';
