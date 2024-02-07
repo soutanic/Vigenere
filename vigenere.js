@@ -1,4 +1,5 @@
 function encryption(){
+	document.body.style.backgroundColor = '#ffc68e';
 	document.write('<a href="https://soutanic.github.io/Vigenere/">◀戻る</a>')
 	document.write('<br>')
 	document.write('<br>')
@@ -11,6 +12,7 @@ function encryption(){
 	document.write('<br>');
 }
 function composite(){
+	document.body.style.backgroundColor = '#ffc68e';
 	document.write('<a href="https://soutanic.github.io/Vigenere/">◀戻る</a>')
 	document.write('<br>')
 	document.write('<br>')
