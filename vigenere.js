@@ -1,6 +1,6 @@
 function encryption(){
-	document.write('a')
 	document.write('<a href="https://soutanic.github.io/Vigenere/">◀戻る</a>')
+	document.write('<br>')
 	document.write('<button onclick="encryption_con()">暗号化</button>')
 	document.write('<p>平文を入力</p>');
 	document.write('<input type="text" size="1" id="user_input_encryption"></input>');
@@ -11,6 +11,7 @@ function encryption(){
 }
 function composite(){
 	document.write('<a href="https://soutanic.github.io/Vigenere/">◀戻る</a>')
+	document.write('<br>')
 	document.write('<button onclick="composite_con()">複合化</button>');
 	document.write('<p>暗号文を入力</p>');
 	document.write('<input type="text" size="1" id="user_input_composite"></input>');
