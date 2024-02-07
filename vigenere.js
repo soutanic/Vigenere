@@ -1,4 +1,5 @@
 function encryption(){
+	document.write('a')
 	document.write('<a href="https://soutanic.github.io/Vigenere/">◀戻る</a>')
 	document.write('<button onclick="encryption_con()">暗号化</button>')
 	document.write('<p>平文を入力</p>');
