@@ -26,6 +26,7 @@ function composite(){
 }
 function encryption_con(){
 	var user_input_encryption = document.getElementById('user_input_encryption').value;
+	user_input_encryption=user_input_encryption.replace(new RegExp("'",'g'),'☹');
 	var key_encryption = document.getElementById('key_encryption').value;
 	var result='';
 	//変換ここから
@@ -68,6 +69,7 @@ function composite_con(){
 			result += alphabet[user_index-1]
 		}
 	}
+	result=result.replace(new RegExp('☹','g'),"'");
 	document.write('<h2>平文：</h2>')
 	document.write(result)
 }
