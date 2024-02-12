@@ -26,7 +26,8 @@ function composite(){
 }
 function encryption_con(){
 	var user_input_encryption = document.getElementById('user_input_encryption').value;
-	user_input_encryption=user_input_encryption.replace(new RegExp("'",'g'),'☹');
+	user_input_encryption=user_input_encryption.replace(new RegExp("'",'g'),'卍');
+	user_input_encryption=user_input_encryption.replace(new RegExp(" ",'g'),'襟');
 	var key_encryption = document.getElementById('key_encryption').value;
 	var result='';
 	//変換ここから
@@ -40,7 +41,11 @@ function encryption_con(){
 		}
 		user_index+=key_encryption_index;
 		if (alphabet.length<user_index){
-			result += alphabet[user_index%alphabet.length-1];
+			if (user_index%alphabet.length-1<0){
+				result += alphabet[(alphabet.length-user_index%alphabet.length)-1]
+			}else{
+				result += alphabet[user_index%alphabet.length-1]
+			}
 		}else{
 			result += alphabet[user_index-1];
 		}
@@ -69,7 +74,8 @@ function composite_con(){
 			result += alphabet[user_index-1]
 		}
 	}
-	result=result.replace(new RegExp('☹','g'),"'");
+	result=result.replace(new RegExp('卍','g'),"'");
+	result=result.replace(new RegExp('襟','g')," ");
 	document.write('<h2>平文：</h2>')
 	document.write(result)
 }
